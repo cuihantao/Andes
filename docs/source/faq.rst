@@ -42,3 +42,8 @@ See the example in ``cases/kundur/kundur_full.xlsx``.
 One does not need to manually trigger a Jacobian matrix rebuild
 because ``Toggler`` automatically triggers it using the new
 connectivity status.
+
+Reference of the existing model
+-----------------
+Q: Is there any further reference of the existing model?
+S: Most of them can be searched online, such as ESIG and PowerWorld.
