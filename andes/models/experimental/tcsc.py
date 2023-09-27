@@ -84,7 +84,7 @@ class TCSCBase(Model):
                               e_str='wref0 - wref',
                               )
 
-class TCSCData(TCSCBaseData):
+class TCSC1Data(TCSCBaseData):
     def __init__(self):
         super().__init__()
         self.Kw = NumParam(info='Regulator gain ',
@@ -189,8 +189,8 @@ class TCSC1Model(TCSCBase):
         self.output = Algeb(info= 'Final Output', tex_name = 'b{\u03B1}',
                             e_str= '1/self.R - b{\u03B1}')
 
-class TCSC(TCSCModelData, TCSCBase):
+class TCSC(TCSC1Model, TCSC1Data):
     def __init__(self, system, config):
-        TCSCModelData.__init__(self)
-        TCSCBase.__init__(self, system, config)
+        TCSC1Model.__init__(self)
+        TCSC1Data.__init__(self, system, config)
            
