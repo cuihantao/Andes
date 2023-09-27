@@ -189,8 +189,8 @@ class TCSC1Model(TCSCBase):
         self.output = Algeb(info= 'Final Output', tex_name = 'b{\u03B1}',
                             e_str= '1/self.R - b{\u03B1}')
 
-class TCSC(TCSC1Model, TCSC1Data):
+class TCSC(TCSC1Data, TCSC1Model):
     def __init__(self, system, config):
-        TCSC1Model.__init__(self)
-        TCSC1Data.__init__(self, system, config)
+        TCSC1Data.__init__(self)
+        TCSC1Model.__init__(self, system, config)
            
