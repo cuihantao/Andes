@@ -12,7 +12,7 @@ import math
 
 class TCSCBaseData(ModelData):
     """
-    Base data for turbine governors.
+    Base data for thyristor controlled series compensators.
     """
 
     def __init__(self):
