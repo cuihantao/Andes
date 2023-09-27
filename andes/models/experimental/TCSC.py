@@ -7,6 +7,7 @@ Created on Fri Sep 22 13:07:49 2023
 
 from andes.core import (Algeb, Lag, LeadLagLimit, NumParam, Washout)
 import math
+from TCSCbase import TCSCBaseData, TCSCBase
 
 class TCSCData(TCSCBaseData):
     def __init__(self):
