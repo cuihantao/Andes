@@ -83,5 +83,9 @@ class TCSCBase(Model):
                               v_str='wref0',
                               e_str='wref0 - wref',
                               )
-            
+
+class TCSC(TCSCModelData, TCSCBase):
+    def __init__(self, system, config):
+        TCSCModelData.__init__(self)
+        TCSCBase.__init__(self, system, config)
            
